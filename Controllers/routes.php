@@ -11,7 +11,19 @@
 |
 */
 
+Route::get('showhello', 'Hellocontroller@index');
+Route::get('showuser/{uname}', 'Hellocontroller@index');               // passing Parameters
 
+Route::get('showhello', function () {                            // closure function or loading view
+    return view('index');
+});
+
+Route::get('showage/{age}', function ($age) {            // passing parameter using closure function 
+    echo $age;
+})->where(['age'=>'[0-9]+']);                                        // add validation 
+
+
+// Routing Parameters
 Route::get('agefilterreq/{max}/{min}', function ($max,$min) {           // Required parameter 
     echo "max:".$max."min:".$min  ; 
 });
