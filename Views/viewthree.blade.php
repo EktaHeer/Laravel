@@ -11,8 +11,8 @@
 </h2>
 <!--   <?php echo $test; ?>  -->                                  <!--     using PHP syntax -->
     
-<!--    @{{$test}}   -->                      <!-- to tell Laravel this is not the part of laravel. -->
+  @{{$test}}                      <!-- to tell Laravel this is not the part of laravel. -->
     
-  <!--  {!! $test !!}   -->                                       <!--     run the script -->
+    {!! $test !!}                                        <!--     run the script -->
   
 @endsection
