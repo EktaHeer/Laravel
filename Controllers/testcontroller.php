@@ -23,9 +23,11 @@ class Testcontroller extends Controller
    public function showblade()
     {
       
-        $data= "using blade syntax";
+        $data= "data1";
         $testdata="<script>alert('showing alert message')</script>";
-        return view('viewthree')->withdata($data)->withtest($testdata);
+       // return view('viewthree')->withdata($data)->withtest($testdata);
+       return view('viewfour')->withdata($data);
+      
     }
 
     
