@@ -1,8 +1,0 @@
-Steps to add middleware:
-
-1) Configure PHP current version in cmd using the command php -v
-2) Create middleware using the following command:
-       php artisan make:middleware test 
-3) Call middleware in the route.php file.
-4) Write the required code into the created middelware (i.e. test)
-5) Define the path of the middleware into the Kernal.php file(app->Http->Kernal.php)
